@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mother's Day Premium 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:black;
+overflow-x:hidden;
+color:white;
+}
+
+/* LOGIN */
+
+#loginPage{
+width:100%;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff4e8a,#7d5fff,#ff758c);
+position:fixed;
+z-index:99999;
+}
+
+.login-box{
+width:340px;
+padding:35px;
+border-radius:30px;
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(15px);
+box-shadow:0 0 40px rgba(255,255,255,0.25);
+text-align:center;
+}
+
+.login-box h1{
+font-size:35px;
+margin-bottom:25px;
+}
+
+.login-box input{
+width:100%;
+padding:15px;
+margin:12px 0;
+border:none;
+border-radius:12px;
+outline:none;
+font-size:16px;
+}
+
+.login-box button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:12px;
+background:white;
+color:#ff2e74;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+}
+
+#error{
+margin-top:12px;
+color:white;
+}
+
+#mainWebsite{
+display:none;
+}
+
+/* HERO */
+
+.hero{
+width:100%;
+height:100vh;
+position:relative;
+overflow:hidden;
+}
+
+.hero img{
+width:100%;
+height:100%;
+object-fit:cover;
+filter:brightness(35%);
+}
+
+.hero-content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+width:90%;
+}
+
+.hero-content h1{
+font-size:65px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:24px;
+line-height:1.8;
+min-height:70px;
+}
+
+.btn{
+margin-top:35px;
+padding:16px 40px;
+border:none;
+border-radius:50px;
+background:white;
+color:#ff2e74;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* SECTION */
+
+.section{
+padding:100px 10%;
+text-align:center;
+}
+
+.section h2{
+font-size:48px;
+margin-bottom:35px;
+color:#ff75a0;
+}
+
+.section p{
+max-width:900px;
+margin:auto;
+font-size:21px;
+line-height:2;
+}
+
+/* MEMORIES */
+
+.memories{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:35px;
+margin-top:60px;
+}
+
+.card{
+width:300px;
+background:rgba(255,255,255,0.1);
+border-radius:25px;
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+.card p{
+padding:20px;
+}
+
+/* FINAL */
+
+.final{
+padding:120px 10%;
+text-align:center;
+}
+
+.final img{
+width:230px;
+height:230px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #ff75a0;
+margin-bottom:35px;
+}
+
+.final h1{
+font-size:60px;
+color:#ff75a0;
+margin-bottom:25px;
+}
+
+footer{
+padding:30px;
+text-align:center;
+background:#111;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- LOGIN -->
+
+<div id="loginPage">
+
+<div class="login-box">
+
+<h1>💖 Secret Surprise</h1>
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Enter</button>
+
+<p id="error"></p>
+
+</div>
+
+</div>
+
+<!-- MAIN -->
+
+<div id="mainWebsite">
+
+<section class="hero">
+
+<img id="slideImage" src="1.jpg">
+
+<div class="hero-content">
+
+<h1>Happy Mother's Day Ammu ❤️</h1>
+
+<p id="typing"></p>
+
+<button class="btn" onclick="scrollToMemory()">
+See Memories ✨
+</button>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>💖 A Message For You</h2>
+
+<p>
+Ammu, you are the most beautiful blessing in my life.
+Your love gives me strength,
+your smile gives me peace,
+and your prayers protect me every single day.
+</p>
+
+</section>
+
+<section class="section" id="memory">
+
+<h2>✨ Some Warm Memories</h2>
+
+<div class="memories">
+
+<div class="card"><img src="1.jpg"><p>Your smile makes my life brighter 🌸</p></div>
+<div class="card"><img src="2.jpg"><p>My happiest moments begin with you 💕</p></div>
+<div class="card"><img src="3.jpg"><p>Thank you for loving me endlessly ❤️</p></div>
+<div class="card"><img src="4.jpg"><p>Your prayers protect me every day 🌷</p></div>
+<div class="card"><img src="5.jpg"><p>You are my safest place 💖</p></div>
+<div class="card"><img src="6.jpg"><p>Your love gives me strength 🌸</p></div>
+<div class="card"><img src="7.jpg"><p>You are the heart of my life ❤️</p></div>
+<div class="card"><img src="8.jpg"><p>Every moment with you is special ✨</p></div>
+<div class="card"><img src="9.png"><p>Your smile is my happiness 💕</p></div>
+<div class="card"><img src="10.jpg"><p>Forever grateful for you Ammu 🌷</p></div>
+
+</div>
+
+</section>
+
+<section class="final">
+
+<img src="10.jpg">
+
+<h1>🌸 Thank You Ammu 🌸</h1>
+
+<p>
+Thank you for every sacrifice,
+every sleepless night,
+every prayer,
+and every moment you stayed beside me.
+</p>
+
+</section>
+
+<footer>
+Made With Endless Love 💖
+</footer>
+
+</div>
+
+<!-- MUSIC -->
+
+<audio id="bgMusic" autoplay loop style="display:none;">
+<source src="music.mp3" type="audio/mp3">
+</audio>
+
+<script>
+
+function login(){
+
+let user=document.getElementById("username").value;
+let pass=document.getElementById("password").value;
+
+if(user==="Rekha" && pass==="Love"){
+
+document.getElementById("loginPage").style.display="none";
+document.getElementById("mainWebsite").style.display="block";
+
+playMusic();
+
+}
+
+else{
+
+document.getElementById("error").innerHTML="Wrong Username or Password 💔";
+
+}
+
+}
+
+function playMusic(){
+
+let music=document.getElementById("bgMusic");
+
+music.play().catch(()=>{});
+
+}
+
+/* typing */
+
+const text="The first home I ever knew was your heart ❤️";
+
+let i=0;
+
+function typingEffect(){
+
+if(i<text.length){
+
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+
+setTimeout(typingEffect,70);
+
+}
+
+}
+
+typingEffect();
+
+/* slideshow */
+
+let images=[
+"1.jpg",
+"2.jpg",
+"3.jpg",
+"4.jpg",
+"5.jpg",
+"6.jpg",
+"7.jpg",
+"8.jpg",
+"9.png",
+"10.jpg"
+];
+
+let current=0;
+
+setInterval(()=>{
+
+current++;
+
+if(current>=images.length){
+
+current=0;
+
+}
+
+document.getElementById("slideImage").src=images[current];
+
+},3000);
+
+function scrollToMemory(){
+
+document.getElementById("memory").scrollIntoView({
+behavior:'smooth'
+});
+
+}
+
+</script>
+
+</body>
+</html>
